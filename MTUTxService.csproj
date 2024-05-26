@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EmbedIO\src\EmbedIO\EmbedIO.csproj" />
+    <ProjectReference Include="..\MTUAuthService\MTUAuthService.csproj" />
     <ProjectReference Include="..\MTUBankBase\MTUBankBase.csproj" />
     <ProjectReference Include="..\MTUModelContainer\MTUModelContainer.csproj" />
   </ItemGroup>

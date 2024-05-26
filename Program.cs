@@ -12,7 +12,7 @@ namespace MTUTxService
         static async Task Main(string[] args)
         {
             // load service configuration
-            serviceConfig = ServiceConfig.Load("auth_config.json");
+            serviceConfig = ServiceConfig.Load("tx_config.json");
 
             // build JWT Service
             jwtService = new JwtService("MTUBank", JwtKeyGenerator.GetSecurityKey(serviceConfig.BindToken));

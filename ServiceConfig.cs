@@ -1,9 +1,9 @@
 ﻿using MTUBankBase.Config;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace MTUTxService
@@ -14,6 +14,7 @@ namespace MTUTxService
         public int Port { get; set; } = 8092;
         public string CoreURL { get; set; } = "http://127.0.0.1:8090";
         public string BindToken { get; set; }
+        public string BaseURL { get; set; } = $"http://127.0.0.1:8092";
 
         public string dbHost { get; set; } = "nk.ax";
         public int dbPort { get; set; } = 3306;
