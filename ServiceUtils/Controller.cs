@@ -29,8 +29,11 @@ namespace MTUTxService.ServiceUtils
                 // find all accounts
                 var accounts = await AccountManager.FindAccounts(HttpContext.CurrentUser);
 
-                var alr = new AccountListResponse();
-                alr.Accounts = accounts;
+                var alr = new AccountListResponse
+                {
+                    Success = true,
+                    Accounts = accounts
+                };
 
                 return alr;
             }
